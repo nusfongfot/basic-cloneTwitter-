@@ -1,0 +1,419 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  display:flex;
+  background-color: black;
+  min-height:120vh;
+  margin: 0;
+}
+.logo{
+  width:26px;
+  height:26px;
+}
+
+/* start side bar */
+.side-bar{
+  display:flex;
+  /* แบ่งพื้นที่เท่าๆกัน */
+  flex: 1;
+  justify-content:flex-end;
+}
+
+.side-bar-content{
+  display:flex;
+  flex-direction: column;
+  width: 250px;
+  padding:0 12px; 
+}
+
+.nav-menu{
+  display:flex;
+  align-items: center;
+  width: 100%;
+  height:40px;
+  padding:4px 0;
+  margin-top: 4px;
+  gap:20px;
+  cursor:pointer; 
+}
+
+.content{
+  display:flex;
+  flex-direction: column;
+  flex: 1;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-right: 1px solid rgba(255,255,255,0.3);
+}
+
+.search-box{
+  flex: 1;
+}
+
+.link{ 
+  color:#fff;
+  text-decoration:none; 
+}
+
+
+.nav-menu:hover{
+  background-color:rgba(255,255,255,0.2);
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.button{
+  cursor: pointer;
+  color:#fff;
+  border-radius:20px;
+  background-color: #219bf0;
+  outline: none;
+  border: none;
+  padding:15px;
+  width: 225px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.profile-section{
+  display:flex;
+  align-items: flex-start;
+  margin-top: 5px;
+  color:#fff;
+}
+
+.profile{
+  margin-bottom: 10px;  
+}
+.profile-section .nameShow{
+  margin-left: 20px;
+}
+.profile-section .userShow{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.profile-img{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-section:hover{
+background-color:rgba(255,255,255,0.2);
+cursor:pointer;
+border-radius: 10px;
+}
+
+/* end side bar */
+
+
+/* start content */
+.title{
+  display:flex;
+  align-items:center;
+  height:54px;
+  width:100%;
+  color:#fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 16px;
+
+}
+
+.tweet-section{
+  display:flex;
+  border-bottom: 1px solid white;
+  padding: 0 16px;
+  padding-top: 12px;
+     
+}
+.profile-tweet{
+  margin-right: 12px;
+}
+
+.input-tweet{
+  flex:1;
+
+}
+
+.post-input{
+  width: 100%;
+  border:none;
+  outline:none;
+  height:52px;
+  background-color:transparent;
+  color:#fff;
+}   
+  
+
+.icon-section{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  width:100%;
+  height:48px;
+}
+
+.section-tweet-btn{
+  cursor: pointer;
+  color:#fff;
+  border-radius:20px;
+  background-color: #219bf0;
+  outline: none;
+  border: none;
+  width: 80px;
+  font-size: 14px;
+  padding:5px;
+  margin-bottom: 4px;
+}
+
+.feed{
+  flex:1;
+}
+
+.tweet{
+  display:flex;
+  padding:0 16px;
+  padding-top: 12px;
+  border-bottom: 1px solid white;
+
+}
+
+.tweet-content{
+  flex:1;
+}
+
+.name{
+  display:flex;
+  align-items:center;
+  color:#fff;
+  position:relative;
+}
+.name > span{
+  opacity: 0.5;
+}
+
+.text-content{
+  color:#fff;
+  font-size: 14px;
+}
+
+.tweet-photo > img{
+  width: 480px;
+  height: 510px;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+
+.action-group{
+  display:flex;
+  width:480px;
+  margin:12px 0;
+  justify-content:space-between;
+  }
+
+.running-number{
+  color:rgba(255,255,255,0.8);
+  font-size: 14px;
+}
+
+.action{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+.more-button{
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  z-index: 50;
+  right:500px;
+  width:36px;
+  height: 36px;
+  border-radius: 36px;
+}
+
+.more-button:hover{
+  background-color:#16181c;
+  cursor: pointer;
+}
+
+/* end content */
+
+
+/* start search-box */
+.search-box{
+  display:flex;
+  /* แบ่งพื้นที่เท่าๆกัน */
+  flex: 1;
+  justify-content:flex-start;
+}
+
+.search-box-container{
+  display:flex;
+  flex-direction: column;
+  width: 350px;
+  margin-left: 40px;
+  padding:0 12px; 
+}
+.search-twitter{
+  background-color: #282327;
+  border-radius: 20px;
+  padding:12px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.trend-container{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  background-color:#16181c;
+  border-radius:10px;
+}
+
+.trend{
+  display:flex;
+  flex-direction: column;
+  height:82px;
+  padding:12px 16px;
+  position: relative;
+}
+
+.trend:hover{
+  background-color:rgba(255,255,255,0.2);
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.more-button-trend{
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  z-index: 50;
+  right:0;
+  top:0;
+  width:36px;
+  height: 36px;
+  border-radius: 36px;
+}
+
+.more-button-trend:hover{
+  background-color:#16181c;
+  cursor: pointer;
+}
+
+.head{
+  color: rgba(255,255,255,0.7);
+}
+
+.hashtag{
+  color:#fff;
+}
+
+.retweets{
+  color: rgba(255,255,255,0.7);
+}
+
+.trend-head{
+  color:#fff;
+}
+
+.showmore{
+  padding:16px;
+}
+.show-more-btn{
+  display:flex;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(0, 132, 255);
+  cursor: pointer;
+}
+
+.showmore:hover{
+  background-color:rgba(255,255,255,0.2);
+  cursor: pointer;
+}
+
+.account-container{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  background-color:#16181c;
+  border-radius:10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+/* end search-box */
+
+
+ /* start follow */
+ .follow-head{
+  color:#fff;
+  margin-left: 12px;
+}
+
+.follow-container{
+  display:flex;
+  justify-content:space-between;
+  padding:0 12px;
+  height:82px;
+  width:100%;
+}
+
+.follow-container:hover{
+  background-color:rgba(255,255,255,0.2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.detail-follower{
+  display:flex;
+}
+
+.name-follow{
+  color:#fff;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+ /* end follow */
+
+
+ /* start footer */
+ footer{
+  margin-top: 24px;
+  margin-bottom: 24px;  
+ }
+footer > a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.3);
+  font-size: 13px;
+  margin:0 10px;
+}
+
+a:hover{
+  color:rgba(255,255,255,0.8);
+}
+
+.copyright{
+  display: block;
+  margin-left: 9px;
+  margin-top: 5px;
+  color: rgba(255,255,255,0.3);
+  font-size: 13px;
+
+
+}
+ /* end footer */
+
